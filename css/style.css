@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #653A1E;
+}
+
+/**** FONTS ****/
+h1 {
+    margin: 0;
+    font-family: 'Shrikhand', cursive;
+    font-size: 36px;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+h3 {
+    text-transform: lowercase;
+}
+
+p{
+    font-family: 'Courier Prime', monospace;
+    text-transform: lowercase;
+}
+
+/**** CONTAINERS ****/
+header{
+    height: 25vh;
+    background-image: url('images/fish-overlay.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+section{
+    padding-top: 50px;
+}
+
+div{
+    margin-bottom: 15px;
+}
+
+.hide {
+    display: none;
+}
+
+/**** BUTTONS ****/
+button{
+    display: block;
+    margin:auto;
+}
+
+.openButton{
+    width: 80%;
+    padding: 3%;
+    margin-bottom: 15px;
+    background-color: #FFDE59;
+    border: 2px solid #FA873E;
+    border-radius: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #653A1E;
+}
+
+.closeButton{
+    background-color: transparent;
+    border: none; 
+    text-decoration: underline;
+    color: #FA873E;
+}
+
+/**** IMAGES ****/
+.logo {
+    width: 50%;
+}
+
+.menu{
+    width: 80%;
+    margin: 15px 0;
+}
+
+/**** MEDIA QUERIES ****/
+@media (min-width: 768px) and (max-width: 2000px){
+    header{
+        height: 40vh;
+    }
+
+    .openButton, .menu, .logo{
+        width: 30%;
+    }
+
+    .openButton{
+        padding: 1%; 
+    }
+}
