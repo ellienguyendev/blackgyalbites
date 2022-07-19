@@ -9,9 +9,10 @@ body{
 h1 {
     margin: 0;
     font-family: 'Shrikhand', cursive;
-    font-size: 36px;
+    font-size: 46px;
     color: #ffffff;
     letter-spacing: 2px;
+    text-shadow: 2px 2px rgba(252, 64, 40, 0.3);
 }
 
 h2 {
@@ -30,6 +31,16 @@ p{
     text-transform: lowercase;
 }
 
+a {
+    text-decoration: none;
+    text-decoration: none;
+    color: #653A1E;
+}
+
+a:hover, a:visited{
+    color: #653A1E;
+}
+
 /**** CONTAINERS ****/
 header{
     height: 25vh;
@@ -40,16 +51,15 @@ header{
     align-content: center;
     flex-direction: column;
 }
+
 section{
     padding-top: 50px;
 }
 
-div{
-    margin-bottom: 15px;
-}
-
-.hide {
-    display: none;
+footer {
+    margin-top: 25px;
+    background-color: #FFDE59;
+    padding: 1%;
 }
 
 /**** BUTTONS ****/
@@ -59,33 +69,24 @@ button{
 }
 
 .openButton{
+    display: block;
     width: 80%;
     padding: 3%;
-    margin-bottom: 15px;
+    margin: 15px auto;
     background-color: #FFDE59;
     border: 2px solid #FA873E;
     border-radius: 10px;
     font-size: 20px;
     text-transform: uppercase;
-    color: #653A1E;
 }
 
-.closeButton{
-    background-color: transparent;
-    border: none; 
-    text-decoration: underline;
-    color: #FA873E;
-}
 
 /**** IMAGES ****/
 .logo {
     width: 50%;
 }
 
-.menu{
-    width: 80%;
-    margin: 15px 0;
-}
+
 
 /**** MEDIA QUERIES ****/
 @media (min-width: 768px) and (max-width: 2000px){
@@ -93,11 +94,15 @@ button{
         height: 40vh;
     }
 
-    .openButton, .menu, .logo{
-        width: 30%;
+    .openButton{
+        width: 50%;
     }
 
     .openButton{
         padding: 1%; 
+    }
+
+    .logo{
+        width: 30%;
     }
 }
