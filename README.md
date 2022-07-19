@@ -1,11 +1,11 @@
 # blackgyalbites
 
-## Template for No-touch Menus
+### Template for No-touch Menus
 Website built with simple HTML & CSS to display restaurant menus when users scan a QR code.
 
 ![screenshot of website with 3 buttons that read: food menu, drinks menu, and catering menu. on the right of it is a screenshot of the drinks menu](css/images/screenshot.png)
 
-## Design and Development
+### Design and Development
 All designs and elements are open source, available for free for anyone to use.
 
 Designed by [The Holistic Technologist](https://holistictech.io)
